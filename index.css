@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 20px 20px;
+}
+
+#gamepad {
+    background-color: #c73838;
+    border-width: 20px;
+    border-color: black;
+    padding:20px;
+    margin: auto;
+    width: 650px;
+    height: 550px;
+    border-radius:20px;
+}
+
+.container {
+    border: 10px;
+    border-color: black;
+    margin:25px auto 25px auto;
+    display: grid;
+    height: 500px;
+    width:500px;
+    background-color: white;
+}
+
+.cell {
+    background-color: white;
+}
+
+.container > div{
+    transition: all 0.7s ease;
+}
