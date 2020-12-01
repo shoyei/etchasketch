@@ -7,17 +7,34 @@
 </head>
 
 <body>
-    <h1>My Etch-A-Sketch</h1>
-    <button id = "reset">Reset</button>
-    <div id = "color-choice">
-        <input type="color" id="pen" name="Choose"
-               value="#000">
-        <label for="pen">Pen Color</label>
-    </div>
+    
+
     <div id="gamepad">
+        <h1>My Etch-A-Sketch</h1>
         <div class="container" id="container">
         </div>
+
+        <div id="bottomRow">
+            <div class="userControl" id="colorChoice">
+                <div id="knob1">
+                    <input type="color" id="pen" name="Choose" value="#000">
+                    <div id="colorSelection"><label id="penTitle" for="pen">Color</label></div>
+                </div>
+                
+            </div>
+            <div class="userControl" id="resolution">
+                <label for="size">Resolution</label>
+                <input type="range" id="gridSize" name="size" min="2" max="100" value="8">
+                
+            </div>
+            <div class="userControl" id="resetDiv">
+                <div id="knob2">
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
     </div>
+
     <script src="index.js"></script>
 
 </body>
